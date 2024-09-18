@@ -1,0 +1,35 @@
+name: Build and Deploy Jekyll Site with Custom Plugins
+
+on:
+  push:
+    branches:
+      - main  # Or your primary branch
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the repository code
+      - uses: actions/checkout@v3
+
+      # Step 2: Set up Ruby environment
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      # Step 3: Install Jekyll dependencies
+      - name: Install dependencies
+        run: bundle install
+
+      # Step 4: Build the Jekyll site (with custom plugins)
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      # Step 5: Deploy the generated site to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
