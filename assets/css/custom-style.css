@@ -1,0 +1,89 @@
+/* Style for the search bar */
+.search-bar {
+    width: 60%; /* Center the search bar, adjust width as needed */
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid #00FF00; /* Hacker green border */
+    background-color: #333333; /* Background color to blend with theme */
+    color: #FFF; /* White text for contrast */
+    border-radius: 4px; /* Rounded corners */
+}
+/* Search results styling */
+.search-results {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.search-results li {
+    background-color: #444444; /* Darker background for search results */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+
+/* Post list styling */
+.post-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.post-item {
+    margin-bottom: 40px;
+}
+
+.post-title a {
+    font-size: 1.8em;
+    color: #00FF00; /* Hacker green */
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+
+.post-date {
+    display: block;
+    color: #999999;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 10px; /* More space between title and date */
+}
+
+.post-excerpt {
+    color: #CCCCCC;
+    line-height: 1.6;
+    max-height: 3.6em; /* Ensure uniform height for all excerpts */
+    overflow: hidden; /* Hide overflow text */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #CCCCCC;
+    border-top: 1px solid #00FF00;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        width: 90%; /* Make the search bar almost full width on mobile */
+        font-size: 1.0em;
+    }
+
+    .post-title a {
+        font-size: 1.4em;
+    }
+
+    .post-excerpt {
+        font-size: 1.0em;
+    }
+}
+
+
