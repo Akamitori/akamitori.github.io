@@ -1,0 +1,15 @@
+---
+layout: hacker
+---
+
+<!-- Include the custom CSS file here -->
+<head>
+  <link rel="stylesheet" href="{{ '/assets/css/custom-style.css' | relative_url }}">
+</head>
+
+{% include custom_search.html %}
+
+{{ content }}
+
+<footer>
+  <p>&copy; {{ site.time | date: "%Y"

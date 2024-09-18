@@ -1,0 +1,49 @@
+/* Style for the search bar */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Space between the search bar and the posts */
+}
+
+/* Search results styling */
+.search-results {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.search-results li {
+    margin-bottom: 15px;
+}
+
+/* Post list styling */
+.post-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.post-item {
+    margin-bottom: 20px;
+}
+
+.post-title a {
+    font-size: 1.6em;
+    color: #00FF00; /* Hacker green */
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+.post-date {
+    display: block;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.post-excerpt {
+    color: #CCC;
+    line-height: 1.6;
+}
