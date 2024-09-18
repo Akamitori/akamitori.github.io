@@ -1,5 +1,33 @@
-_site
-.sass-cache
-.jekyll-cache
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+cache/
+vendor/
+.bundle/
+log/
+tmp/
+Gemfile.lock
+node_modules/
+.yarn-integrity
+package-lock.json
+yarn-error.log
+
+# Temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# System-specific files
+*.log
+*.tmp
+*.pid
+*.gem
+*.gz
+
+# Ruby specific
+**/.bundle
+**/vendor
